@@ -8,6 +8,12 @@
       <entry key="app.data">
         <State />
       </entry>
+      <entry key="data">
+        <State />
+      </entry>
+      <entry key="data.data">
+        <State />
+      </entry>
     </value>
   </component>
 </project>

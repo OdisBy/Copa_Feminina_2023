@@ -3,3 +3,11 @@ plugins {
     alias(libs.plugins.androidApplication) apply false
     alias(libs.plugins.kotlinAndroid) apply false
 }
+
+buildscript {
+    extra.apply{
+        set("minSdkVersion", 26)
+        set("targetSdkVersion", 33)
+        set("compileSdkVersion", 33)
+    }
+}

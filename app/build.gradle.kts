@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.odisby.copa_feminina"
-    compileSdk = 33
+    compileSdk = rootProject.extra["compileSdkVersion"] as Int
 
     defaultConfig {
         applicationId = "com.odisby.copa_feminina"
-        minSdk = 24
-        targetSdk = 33
+        minSdk = rootProject.extra["minSdkVersion"] as Int
+        targetSdk = rootProject.extra["targetSdkVersion"] as Int
         versionCode = 1
         versionName = "1.0"
 

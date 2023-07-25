@@ -1,15 +1,17 @@
 [versions]
 agp = "8.2.0-alpha13"
 kotlin = "1.8.10"
-core-ktx = "1.9.0"
+core-ktx = "1.10.1"
 junit = "4.13.2"
 androidx-test-ext-junit = "1.1.5"
 espresso-core = "3.5.1"
 lifecycle-runtime-ktx = "2.6.1"
 activity-compose = "1.7.2"
-compose-bom = "2023.03.00"
+compose-bom = "2023.06.01"
 appcompat = "1.6.1"
 material = "1.9.0"
+daggerVersion = "2.46.1"
+hiltVersion = "2.46.1"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
@@ -28,6 +30,12 @@ ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 material3 = { group = "androidx.compose.material3", name = "material3" }
 appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+hilt-Android = { module = "com.google.dagger:hilt-android", version.ref = "hiltVersion" }
+hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hiltVersion" }
+
+dagger-compiler = { module = "com.google.dagger:dagger-compiler", version.ref = "daggerVersion" }
+dagger = { module = "com.google.dagger:dagger", version.ref = "daggerVersion" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

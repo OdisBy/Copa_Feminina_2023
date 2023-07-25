@@ -16,3 +16,4 @@ dependencyResolutionManagement {
 rootProject.name = "Copa_Feminina"
 include(":app")
 include(":data")
+include(":data:data")

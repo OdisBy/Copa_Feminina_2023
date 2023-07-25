@@ -1,4 +1,3 @@
-@Suppress("DSL_SCOPE_VIOLATION") // TODO: Remove once KTIJ-19369 is fixed
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.kotlinAndroid)
@@ -6,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.odisby.data"
-    compileSdk = rootProject.extra["compileSdkVersion"] as Int
+    compileSdk = 33
 
     defaultConfig {
         applicationId = "com.odisby.data"
-        minSdk = rootProject.extra["minSdkVersion"] as Int
-        targetSdk = rootProject.extra["targetSdkVersion"] as Int
+        minSdk = 24
+        targetSdk = 33
         versionCode = 1
         versionName = "1.0"
 
