@@ -12,6 +12,7 @@ appcompat = "1.6.1"
 material = "1.9.0"
 daggerVersion = "2.46.1"
 hiltVersion = "2.46.1"
+coroutinesVersion = "1.6.4"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
@@ -33,11 +34,14 @@ material = { group = "com.google.android.material", name = "material", version.r
 
 hilt-Android = { module = "com.google.dagger:hilt-android", version.ref = "hiltVersion" }
 hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hiltVersion" }
-
 dagger-compiler = { module = "com.google.dagger:dagger-compiler", version.ref = "daggerVersion" }
 dagger = { module = "com.google.dagger:dagger", version.ref = "daggerVersion" }
+coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutinesVersion"}
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-
+#java-library = { id = "java-library", version.ref}
+dagger-hilt-android = { id = "com.google.dagger.hilt.android" , version.ref = "daggerVersion" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
