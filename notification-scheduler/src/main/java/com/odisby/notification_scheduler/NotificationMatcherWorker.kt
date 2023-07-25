@@ -33,7 +33,7 @@ class NotificationMatcherWorker(
 
     companion object {
         fun start(context: Context, match: MatchDomain) {
-            val (id, _, teamA, teamB, _, matchDate, _, _) = match
+            val (id, matchDate, name, teamA, teamB, _, hasTeamNames, _, _, _) = match
 
             val initialDelay = Duration.between(LocalDateTime.now(), matchDate).minusMinutes(5)
             val inputData = workDataOf(
@@ -43,7 +43,7 @@ class NotificationMatcherWorker(
 
             WorkManager.getInstance(context)
                 .enqueueUniqueWork(
-                    id,
+                    id.toString(),
                     ExistingWorkPolicy.KEEP,
                     createRequest(initialDelay, inputData)
                 )
@@ -51,7 +51,7 @@ class NotificationMatcherWorker(
 
         fun cancel(context: Context, match: MatchDomain) {
             WorkManager.getInstance(context)
-                .cancelUniqueWork(match.id)
+                .cancelUniqueWork(match.id.toString())
         }
 
         private fun createRequest(initialDelay: Duration, inputData: Data): OneTimeWorkRequest =
