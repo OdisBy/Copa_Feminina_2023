@@ -13,6 +13,7 @@ material = "1.9.0"
 daggerVersion = "2.46.1"
 hiltVersion = "2.46.1"
 coroutinesVersion = "1.6.4"
+workRuntimeVersion = "2.8.1"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
@@ -37,6 +38,7 @@ hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hil
 dagger-compiler = { module = "com.google.dagger:dagger-compiler", version.ref = "daggerVersion" }
 dagger = { module = "com.google.dagger:dagger", version.ref = "daggerVersion" }
 coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutinesVersion"}
+work-runtime = { module = "androidx.work:work-runtime-ktx", version.ref = "workRuntimeVersion" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
