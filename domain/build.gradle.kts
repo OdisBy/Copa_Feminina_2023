@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.odisby.data"
+    namespace = "com.odisby.domain"
     compileSdk = rootProject.extra["compileSdkVersion"] as Int
 
     defaultConfig {
-        applicationId = "com.odisby.data"
+        applicationId = "com.odisby.domain"
         minSdk = rootProject.extra["minSdkVersion"] as Int
         targetSdk = rootProject.extra["targetSdkVersion"] as Int
         versionCode = 1
@@ -37,7 +37,6 @@ android {
 
 dependencies {
     implementation(libs.coroutines.core)
-
     implementation(libs.dagger.compiler)
     implementation(libs.dagger)
 }

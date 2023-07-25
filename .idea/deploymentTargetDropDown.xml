@@ -2,6 +2,9 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
+      <entry key="Workspace.Copa_Feminina.domain.main">
+        <State />
+      </entry>
       <entry key="app">
         <State />
       </entry>
@@ -12,6 +15,12 @@
         <State />
       </entry>
       <entry key="data.data">
+        <State />
+      </entry>
+      <entry key="domain">
+        <State />
+      </entry>
+      <entry key="notification-scheduler">
         <State />
       </entry>
     </value>

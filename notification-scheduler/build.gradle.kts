@@ -1,16 +1,17 @@
+@Suppress("DSL_SCOPE_VIOLATION") // TODO: Remove once KTIJ-19369 is fixed
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.kotlinAndroid)
 }
 
 android {
-    namespace = "com.odisby.data"
-    compileSdk = rootProject.extra["compileSdkVersion"] as Int
+    namespace = "com.odisby.notification_scheduler"
+    compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.odisby.data"
-        minSdk = rootProject.extra["minSdkVersion"] as Int
-        targetSdk = rootProject.extra["targetSdkVersion"] as Int
+        applicationId = "com.odisby.notification_scheduler"
+        minSdk = 24
+        targetSdk = 33
         versionCode = 1
         versionName = "1.0"
 
@@ -36,8 +37,11 @@ android {
 }
 
 dependencies {
-    implementation(libs.coroutines.core)
 
-    implementation(libs.dagger.compiler)
-    implementation(libs.dagger)
+    implementation(libs.core.ktx)
+    implementation(libs.appcompat)
+    implementation(libs.material)
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.test.ext.junit)
+    androidTestImplementation(libs.espresso.core)
 }

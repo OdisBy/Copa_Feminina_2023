@@ -15,5 +15,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "Copa_Feminina"
 include(":app")
-include(":data")
 include(":data:data")
+include(":domain")
+include(":notification-scheduler")
