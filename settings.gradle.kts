@@ -13,8 +13,9 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Copa_Feminina"
+rootProject.name = "Copa Feminina"
 include(":app")
 include(":data:data")
 include(":domain")
 include(":notification-scheduler")
+include(":data:local")
