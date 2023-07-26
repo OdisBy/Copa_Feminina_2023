@@ -52,6 +52,12 @@ android {
 
 dependencies {
 
+    implementation(project(":domain"))
+    implementation(project(":data:local"))
+    implementation(project(":data:remote"))
+    implementation(project(":data:data"))
+    implementation(project(":notification-scheduler"))
+
     implementation(libs.core.ktx)
     implementation(libs.lifecycle.runtime.ktx)
     implementation(libs.activity.compose)
@@ -67,4 +73,7 @@ dependencies {
     androidTestImplementation(libs.ui.test.junit4)
     debugImplementation(libs.ui.tooling)
     debugImplementation(libs.ui.test.manifest)
+
+    implementation(libs.dagger.compiler)
+    implementation(libs.dagger.android)
 }
