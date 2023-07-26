@@ -2,7 +2,7 @@
 
 ## API
 
-Para facilitar a dinâmica de integração do nosso App, criamos uma Pseudo-API usando o GitHub Pages, a qual está disponível na seguinte URL: 
+Para facilitar a dinâmica de integração do nosso App, criamos uma Pseudo-API usando o GitHub Pages, a qual está disponível na seguinte URL: https://odisby.github.io/Copa_Feminina_2023/docs/api.json
 
 ## Desafio de Projeto (Lab) 😎
 
@@ -23,10 +23,8 @@ Para facilitar a dinâmica de integração do nosso App, criamos uma Pseudo-API 
 5. :white_large_square: Integrar o ViewModel e Activity, através da observação de estados;
 6. :white_large_square: Por fim, criar o Work Manager para orquestrar as Notificações Push localmente.
 
-## Materia/Live de Apoio
+## Inspiração
 
-Todos esses TODOs foram realizados nesta live incrível, com a participação de [pedrox-hs](https://github.com/pedrox-hs), [EzequielMessore](https://github.com/EzequielMessore), [igorbag](https://github.com/igorbag) e [falvojr](https://github.com/falvojr). Segue a gente aqui no GitHub e no LinkedIn 😉
+Estou realizando esse projeto com inspiração no app desafio Copa 2022 Android da Dio.
 
-**[Android Mobile Week #2: Aprenda a Criar um App com Listagem e Notificações dos Jogos do Brasil na Copa](https://youtu.be/30ZiJmCWliI)**
-
-Bons estudos galera 😘
+**[Github do projeto de inspiração](https://github.com/digitalinnovationone/copa-2022-android/tree/main)**
