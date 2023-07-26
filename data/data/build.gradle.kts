@@ -1,11 +1,11 @@
 plugins {
-    alias(libs.plugins.kotlin.kapt)
-    java
+    alias(libs.plugins.androidLibrary)
+    alias(libs.plugins.kotlinAndroid)
 }
 
-java {
-    sourceCompatibility = JavaVersion.VERSION_1_8
-    targetCompatibility = JavaVersion.VERSION_1_8
+android {
+    namespace = "com.odisby.copa_feminina.data.data"
+    compileSdk = rootProject.extra["compileSdkVersion"] as Int
 }
 
 dependencies {
