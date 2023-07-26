@@ -10,14 +10,13 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.odisby.copa_feminina.ui.theme.Copa_FemininaTheme
+import com.odisby.copa_feminina.ui.theme.CopaFemininaTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            Copa_FemininaTheme {
-                // A surface container using the 'background' color from the theme
+            CopaFemininaTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
@@ -40,7 +39,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    Copa_FemininaTheme {
+    CopaFemininaTheme {
         Greeting("Android")
     }
 }

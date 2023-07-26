@@ -2,6 +2,9 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
+      <entry key="GreetingPreview">
+        <State />
+      </entry>
       <entry key="Workspace.Copa_Feminina.domain.main">
         <State />
       </entry>

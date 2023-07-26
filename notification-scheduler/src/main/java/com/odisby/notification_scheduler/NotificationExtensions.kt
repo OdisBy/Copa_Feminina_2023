@@ -10,6 +10,7 @@ import android.content.pm.PackageManager
 import androidx.core.app.ActivityCompat
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
+import com.odisby.copa_feminina.notification_scheduler.R
 
 private const val CHANNEL_ID = "new_channel_video"
 private const val NOTIFICATION_NAME = "Notificações"
