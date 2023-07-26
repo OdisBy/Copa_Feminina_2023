@@ -12,6 +12,7 @@ plugins {
     alias(libs.plugins.kotlinAndroid) apply false
     alias(libs.plugins.dagger.hilt.android) apply false
     alias(libs.plugins.kotlin.kapt)
+    alias(libs.plugins.androidLibrary) apply false
 }
 
 tasks.register("clean",Delete::class){
