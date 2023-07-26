@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.kotlinAndroid)
+    alias(libs.plugins.kapt)
 }
 
 android {
@@ -9,8 +10,9 @@ android {
 }
 
 dependencies {
-    implementation(libs.coroutines.core)
+    implementation(project(":domain"))
 
+    implementation(libs.coroutines.core)
     implementation(libs.dagger.compiler)
     implementation(libs.dagger)
 }
