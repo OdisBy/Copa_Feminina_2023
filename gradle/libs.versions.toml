@@ -41,6 +41,7 @@ hilt-Android = { module = "com.google.dagger:hilt-android", version.ref = "hiltV
 hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hiltVersion" }
 dagger-compiler = { module = "com.google.dagger:dagger-compiler", version.ref = "daggerVersion" }
 dagger = { module = "com.google.dagger:dagger", version.ref = "daggerVersion" }
+dagger-android = { module = "com.google.dagger:hilt-android", version.ref = "daggerVersion" }
 coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutinesVersion"}
 work-runtime = { module = "androidx.work:work-runtime-ktx", version.ref = "workRuntimeVersion" }
 androidx-datastore = { module = "androidx.datastore:datastore-preferences", version.ref = "datastoreVersion"}
