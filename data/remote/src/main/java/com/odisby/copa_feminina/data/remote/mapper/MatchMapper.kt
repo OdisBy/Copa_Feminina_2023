@@ -28,7 +28,9 @@ fun MatchRemote.toDomain(): MatchDomain {
 }
 
 private fun LocalDateTime.toPhoneTimeZone(): LocalDateTime {
-    return atZone(ZoneId.systemDefault()).toLocalDateTime()
+    val gmtDateTime = atZone(ZoneId.of("GMT"))
+    val phoneTimeZoneDateTime = gmtDateTime.withZoneSameInstant(ZoneId.systemDefault())
+    return phoneTimeZoneDateTime.toLocalDateTime()
 }
 
 fun LocalDateTime.getDate(): String {
