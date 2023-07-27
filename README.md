@@ -2,7 +2,7 @@
 
 ## API
 
-Para facilitar a dinâmica de integração do nosso App, criamos uma Pseudo-API usando o GitHub Pages, a qual está disponível na seguinte URL: https://odisby.github.io/Copa_Feminina_2023/docs/api.json
+Para facilitar a dinâmica de integração do nosso App, criamos uma Pseudo-API usando o GitHub Pages, a qual está disponível na seguinte URL: https://odisby.github.io/Copa_Feminina_2023/docs/en/api.json ou https://odisby.github.io/Copa_Feminina_2023/docs/pt/api.json
 
 ## Desafio de Projeto (Lab) 😎
 

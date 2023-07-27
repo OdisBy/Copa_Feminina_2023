@@ -1,0 +1,898 @@
+[
+  {
+    "id": 1,
+    "date": "2023-07-20T07:00:00",
+    "name": "Fase de grupos",
+    "teamA": "Nova Zelândia",
+    "teamB": "Noruega",
+    "stadium": "Eden Park, Auckland",
+    "hasTeamNames": true,
+    "finishGame": true,
+    "score": {
+      "teamAScore": 1,
+      "teamBScore": 0
+    }
+  },
+  {
+    "id": 2,
+    "date": "2023-07-20T10:00:00",
+    "name": "Fase de grupos",
+    "teamA": "Austrália",
+    "teamB": "Irlanda",
+    "stadium": "Stadium Austrália, Sydney",
+    "hasTeamNames": true,
+    "finishGame": true,
+    "score": {
+      "teamAScore": 1,
+      "teamBScore": 0
+    }
+  },
+  {
+    "id": 3,
+    "date": "2023-07-21T02:30:00",
+    "name": "Fase de grupos",
+    "teamA": "Nigéria",
+    "teamB": "Canada",
+    "stadium": "Melbourne Rectangular Stadium, Melbourne",
+    "hasTeamNames": true,
+    "finishGame": true,
+    "score": {
+      "teamAScore": 0,
+      "teamBScore": 0
+    }
+  },
+  {
+    "id": 4,
+    "date": "2023-07-21T05:00:00",
+    "name": "Fase de grupos",
+    "teamA": "Filipinas",
+    "teamB": "Suíça",
+    "stadium": "Forsyth Barr Stadium, Dunedin",
+    "hasTeamNames": true,
+    "finishGame": true,
+    "score": {
+      "teamAScore": 0,
+      "teamBScore": 2
+    }
+  },
+  {
+    "id": 5,
+    "date": "2023-07-21T07:30:00",
+    "name": "Fase de grupos",
+    "teamA": "Espanha",
+    "teamB": "Costa Rica",
+    "stadium": "Wellington Regional Stadium, Wellington",
+    "hasTeamNames": true,
+    "finishGame": true,
+    "score": {
+      "teamAScore": 3,
+      "teamBScore": 0
+    }
+  },
+  {
+    "id": 6,
+    "date": "2023-07-22T01:00:00",
+    "name": "Fase de grupos",
+    "teamA": "USA",
+    "teamB": "Vietnã",
+    "stadium": "Eden Park, Auckland",
+    "hasTeamNames": true,
+    "finishGame": true,
+    "score": {
+      "teamAScore": 3,
+      "teamBScore": 0
+    }
+  },
+  {
+    "id": 7,
+    "date": "2023-07-22T07:00:00",
+    "name": "Fase de grupos",
+    "teamA": "Zâmbia",
+    "teamB": "Japão",
+    "stadium": "Waikato Stadium, Hamilton",
+    "hasTeamNames": true,
+    "finishGame": true,
+    "score": {
+      "teamAScore": 0,
+      "teamBScore": 5
+    }
+  },
+  {
+    "id": 8,
+    "date": "2023-07-22T09:30:00",
+    "name": "Fase de grupos",
+    "teamA": "Inglaterra",
+    "teamB": "Haiti",
+    "stadium": "Lang Park, Brisbane",
+    "hasTeamNames": true,
+    "finishGame": true,
+    "score": {
+      "teamAScore": 1,
+      "teamBScore": 0
+    }
+  },
+  {
+    "id": 9,
+    "date": "2023-07-22T12:00:00",
+    "name": "Fase de grupos",
+    "teamA": "Dinamarca",
+    "teamB": "China",
+    "stadium": "Perth Rectangular Stadium, Perth",
+    "hasTeamNames": true,
+    "finishGame": true,
+    "score": {
+      "teamAScore": 1,
+      "teamBScore": 0
+    }
+  },
+  {
+    "id": 10,
+    "date": "2023-07-23T05:00:00",
+    "name": "Fase de grupos",
+    "teamA": "Suécia",
+    "teamB": "África do Sul",
+    "stadium": "Wellington Regional Stadium, Wellington",
+    "hasTeamNames": true,
+    "finishGame": true,
+    "score": {
+      "teamAScore": 2,
+      "teamBScore": 1
+    }
+  },
+  {
+    "id": 11,
+    "date": "2023-07-23T07:30:00",
+    "name": "Fase de grupos",
+    "teamA": "Holanda",
+    "teamB": "Portugal",
+    "stadium": "Forsyth Barr Stadium, Dunedin",
+    "hasTeamNames": true,
+    "finishGame": true,
+    "score": {
+      "teamAScore": 1,
+      "teamBScore": 0
+    }
+  },
+  {
+    "id": 12,
+    "date": "2023-07-23T10:00:00",
+    "name": "Fase de grupos",
+    "teamA": "França",
+    "teamB": "Jamaica",
+    "stadium": "Sydney Football Stadium, Sydney",
+    "hasTeamNames": true,
+    "finishGame": true,
+    "score": {
+      "teamAScore": 0,
+      "teamBScore": 0
+    }
+  },
+  {
+    "id": 13,
+    "date": "2023-07-24T00:00:00",
+    "name": "Fase de grupos",
+    "teamA": "Itália",
+    "teamB": "Argentina",
+    "stadium": "Eden Park, Auckland",
+    "hasTeamNames": true,
+    "finishGame": true,
+    "score": {
+      "teamAScore": 1,
+      "teamBScore": 0
+    }
+  },
+  {
+    "id": 14,
+    "date": "2023-07-24T08:30:00",
+    "name": "Fase de grupos",
+    "teamA": "Alemanha",
+    "teamB": "Marrocos",
+    "stadium": "Melbourne Rectangular Stadium, Melbourne",
+    "hasTeamNames": true,
+    "finishGame": true,
+    "score": {
+      "teamAScore": 6,
+      "teamBScore": 0
+    }
+  },
+  {
+    "id": 15,
+    "date": "2023-07-24T11:00:00",
+    "name": "Fase de grupos",
+    "teamA": "Brasil",
+    "teamB": "Panamá",
+    "stadium": "Hindmarsh Stadium, Adelaide",
+    "hasTeamNames": true,
+    "finishGame": true,
+    "score": {
+      "teamAScore": 4,
+      "teamBScore": 0
+    }
+  },
+  {
+    "id": 16,
+    "date": "2023-07-25T02:00:00",
+    "name": "Fase de grupos",
+    "teamA": "Colômbia",
+    "teamB": "Coreia do Sul",
+    "stadium": "Sydney Football Stadium, Sydney",
+    "hasTeamNames": true,
+    "finishGame": true,
+    "score": {
+      "teamAScore": 2,
+      "teamBScore": 0
+    }
+  },
+  {
+    "id": 17,
+    "date": "2023-07-25T05:30:00",
+    "name": "Fase de grupos",
+    "teamA": "Nova Zelândia",
+    "teamB": "Filipinas",
+    "stadium": "Wellington Regional Stadium, Wellington",
+    "hasTeamNames": true,
+    "finishGame": true,
+    "score": {
+      "teamAScore": 0,
+      "teamBScore": 1
+    }
+  },
+  {
+    "id": 18,
+    "date": "2023-07-25T08:00:00",
+    "name": "Fase de grupos",
+    "teamA": "Suíça",
+    "teamB": "Noruega",
+    "stadium": "Waikato Stadium, Hamilton",
+    "hasTeamNames": true,
+    "finishGame": true,
+    "score": {
+      "teamAScore": 0,
+      "teamBScore": 0
+    }
+  },
+  {
+    "id": 19,
+    "date": "2023-07-26T05:00:00",
+    "name": "Fase de grupos",
+    "teamA": "Japão",
+    "teamB": "Costa Rica",
+    "stadium": "Forsyth Barr Stadium, Dunedin",
+    "hasTeamNames": true,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 20,
+    "date": "2023-07-26T07:30:00",
+    "name": "Fase de grupos",
+    "teamA": "Espanha",
+    "teamB": "Zâmbia",
+    "stadium": "Eden Park, Auckland",
+    "hasTeamNames": true,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 21,
+    "date": "2023-07-26T12:00:00",
+    "name": "Fase de grupos",
+    "teamA": "Canada",
+    "teamB": "Austrália",
+    "stadium": "Melbourne Rectangular Stadium, Melbourne",
+    "hasTeamNames": true,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 22,
+    "date": "2023-07-27T05:00:00",
+    "name": "Fase de grupos",
+    "teamA": "USA",
+    "teamB": "Holanda",
+    "stadium": "Wellington Regional Stadium, Wellington",
+    "hasTeamNames": true,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 23,
+    "date": "2023-07-27T07:30:00",
+    "name": "Fase de grupos",
+    "teamA": "Portugal",
+    "teamB": "Vietnã",
+    "stadium": "Waikato Stadium, Hamilton",
+    "hasTeamNames": true,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 24,
+    "date": "2023-07-27T10:00:00",
+    "name": "Fase de grupos",
+    "teamA": "Austrália",
+    "teamB": "Nigéria",
+    "stadium": "Lang Park, Brisbane",
+    "hasTeamNames": true,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 25,
+    "date": "2023-07-28T00:00:00",
+    "name": "Fase de grupos",
+    "teamA": "Argentina",
+    "teamB": "África do Sul",
+    "stadium": "Forsyth Barr Stadium, Dunedin",
+    "hasTeamNames": true,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 26,
+    "date": "2023-07-28T08:30:00",
+    "name": "Fase de grupos",
+    "teamA": "Inglaterra",
+    "teamB": "Dinamarca",
+    "stadium": "Sydney Football Stadium, Sydney",
+    "hasTeamNames": true,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 27,
+    "date": "2023-07-28T11:00:00",
+    "name": "Fase de grupos",
+    "teamA": "China",
+    "teamB": "Haiti",
+    "stadium": "Hindmarsh Stadium, Adelaide",
+    "hasTeamNames": true,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 28,
+    "date": "2023-07-29T07:30:00",
+    "name": "Fase de grupos",
+    "teamA": "Suécia",
+    "teamB": "Itália",
+    "stadium": "Wellington Regional Stadium, Wellington",
+    "hasTeamNames": true,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 29,
+    "date": "2023-07-29T10:00:00",
+    "name": "Fase de grupos",
+    "teamA": "França",
+    "teamB": "Brasil",
+    "stadium": "Lang Park, Brisbane",
+    "hasTeamNames": true,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 30,
+    "date": "2023-07-29T12:30:00",
+    "name": "Fase de grupos",
+    "teamA": "Panamá",
+    "teamB": "Jamaica",
+    "stadium": "Perth Rectangular Stadium, Perth",
+    "hasTeamNames": true,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 31,
+    "date": "2023-07-30T04:30:00",
+    "name": "Fase de grupos",
+    "teamA": "Coreia do Sul",
+    "teamB": "Marrocos",
+    "stadium": "Hindmarsh Stadium, Adelaide",
+    "hasTeamNames": true,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 32,
+    "date": "2023-07-30T07:00:00",
+    "name": "Fase de grupos",
+    "teamA": "Noruega",
+    "teamB": "Filipinas",
+    "stadium": "Eden Park, Auckland",
+    "hasTeamNames": true,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 33,
+    "date": "2023-07-30T07:00:00",
+    "name": "Fase de grupos",
+    "teamA": "Suíça",
+    "teamB": "Nova Zelândia",
+    "stadium": "Forsyth Barr Stadium, Dunedin",
+    "hasTeamNames": true,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 34,
+    "date": "2023-07-30T09:30:00",
+    "name": "Fase de grupos",
+    "teamA": "Alemanha",
+    "teamB": "Colômbia",
+    "stadium": "Sydney Football Stadium, Sydney",
+    "hasTeamNames": true,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 35,
+    "date": "2023-07-31T07:00:00",
+    "name": "Fase de grupos",
+    "teamA": "Japão",
+    "teamB": "Espanha",
+    "stadium": "Wellington Regional Stadium, Wellington",
+    "hasTeamNames": true,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 36,
+    "date": "2023-07-31T07:00:00",
+    "name": "Fase de grupos",
+    "teamA": "Costa Rica",
+    "teamB": "Zâmbia",
+    "stadium": "Waikato Stadium, Hamilton",
+    "hasTeamNames": true,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 37,
+    "date": "2023-07-31T10:00:00",
+    "name": "Fase de grupos",
+    "teamA": "Canada",
+    "teamB": "Austrália",
+    "stadium": "Melbourne Rectangular Stadium, Melbourne",
+    "hasTeamNames": true,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 38,
+    "date": "2023-07-31T10:00:00",
+    "name": "Fase de grupos",
+    "teamA": "Irlanda",
+    "teamB": "Nigéria",
+    "stadium": "Lang Park, Brisbane",
+    "hasTeamNames": true,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 39,
+    "date": "2023-08-01T07:00:00",
+    "name": "Fase de grupos",
+    "teamA": "Portugal",
+    "teamB": "USA",
+    "stadium": "Eden Park, Auckland",
+    "hasTeamNames": true,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 40,
+    "date": "2023-08-01T07:00:00",
+    "name": "Fase de grupos",
+    "teamA": "Holanda",
+    "teamB": "Vietnã",
+    "stadium": "Forsyth Barr Stadium, Dunedin",
+    "hasTeamNames": true,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 41,
+    "date": "2023-08-01T11:00:00",
+    "name": "Fase de grupos",
+    "teamA": "Haiti",
+    "teamB": "Dinamarca",
+    "stadium": "Perth Rectangular Stadium, Perth",
+    "hasTeamNames": true,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 42,
+    "date": "2023-08-01T11:00:00",
+    "name": "Fase de grupos",
+    "teamA": "China",
+    "teamB": "Inglaterra",
+    "stadium": "Hindmarsh Stadium, Adelaide",
+    "hasTeamNames": true,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 43,
+    "date": "2023-08-02T07:00:00",
+    "name": "Fase de grupos",
+    "teamA": "África do Sul",
+    "teamB": "Itália",
+    "stadium": "Wellington Regional Stadium, Wellington",
+    "hasTeamNames": true,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 44,
+    "date": "2023-08-02T07:00:00",
+    "name": "Fase de grupos",
+    "teamA": "Argentina",
+    "teamB": "Suécia",
+    "stadium": "Waikato Stadium, Hamilton",
+    "hasTeamNames": true,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 45,
+    "date": "2023-08-02T10:00:00",
+    "name": "Fase de grupos",
+    "teamA": "Panamá",
+    "teamB": "França",
+    "stadium": "Sydney Football Stadium, Sydney",
+    "hasTeamNames": true,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 46,
+    "date": "2023-08-02T10:00:00",
+    "name": "Fase de grupos",
+    "teamA": "Jamaica",
+    "teamB": "Brasil",
+    "stadium": "Melbourne Rectangular Stadium, Melbourne",
+    "hasTeamNames": true,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 47,
+    "date": "2023-08-03T10:00:00",
+    "name": "Fase de grupos",
+    "teamA": "Coreia do Sul",
+    "teamB": "Alemanha",
+    "stadium": "Lang Park, Brisbane",
+    "hasTeamNames": true,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 48,
+    "date": "2023-08-03T10:00:00",
+    "name": "Fase de grupos",
+    "teamA": "Marrocos",
+    "teamB": "Colômbia",
+    "stadium": "Perth Rectangular Stadium, Perth",
+    "hasTeamNames": true,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 49,
+    "date": "2023-08-05T05:00:00",
+    "name": "Oitavas de final",
+    "teamA": "Winner A",
+    "teamB": "Runners-up C",
+    "stadium": "Eden Park, Auckland",
+    "hasTeamNames": false,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 50,
+    "date": "2023-08-05T08:00:00",
+    "name": "Oitavas de final",
+    "teamA": "Winner C",
+    "teamB": "Runners-up A",
+    "stadium": "Wellington Regional Stadium, Wellington",
+    "hasTeamNames": false,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 51,
+    "date": "2023-08-06T02:00:00",
+    "name": "Oitavas de final",
+    "teamA": "Winner E",
+    "teamB": "Runners-up G",
+    "stadium": "Sydney Football Stadium, Sydney",
+    "hasTeamNames": false,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 52,
+    "date": "2023-08-06T09:00:00",
+    "name": "Oitavas de final",
+    "teamA": "Winner G",
+    "teamB": "Runners-up E",
+    "stadium": "Melbourne Rectangular Stadium, Melbourne",
+    "hasTeamNames": false,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 53,
+    "date": "2023-08-07T07:30:00",
+    "name": "Oitavas de final",
+    "teamA": "Winner D",
+    "teamB": "Runners-up B",
+    "stadium": "Lang Park, Brisbane",
+    "hasTeamNames": false,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 54,
+    "date": "2023-08-07T10:30:00",
+    "name": "Oitavas de final",
+    "teamA": "Winner B",
+    "teamB": "Runners-up D",
+    "stadium": "Stadium Austrália, Sydney",
+    "hasTeamNames": false,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 55,
+    "date": "2023-08-08T08:00:00",
+    "name": "Oitavas de final",
+    "teamA": "Winner H",
+    "teamB": "Runners-up F",
+    "stadium": "Melbourne Rectangular Stadium, Melbourne",
+    "hasTeamNames": false,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 56,
+    "date": "2023-08-08T11:00:00",
+    "name": "Oitavas de final",
+    "teamA": "Winner F",
+    "teamB": "Runners-up H",
+    "stadium": "Hindmarsh Stadium, Adelaide",
+    "hasTeamNames": false,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 57,
+    "date": "2023-08-11T01:00:00",
+    "name": "Quartas de final",
+    "teamA": "Winner 49",
+    "teamB": "Winner 50",
+    "stadium": "Wellington Regional Stadium, Wellington",
+    "hasTeamNames": false,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 58,
+    "date": "2023-08-11T07:30:00",
+    "name": "Quartas de final",
+    "teamA": "Winner 51",
+    "teamB": "Winner 52",
+    "stadium": "Eden Park, Auckland",
+    "hasTeamNames": false,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 59,
+    "date": "2023-08-12T05:00:00",
+    "name": "Quartas de final",
+    "teamA": "Winner 53",
+    "teamB": "Winner 54",
+    "stadium": "Lang Park, Brisbane",
+    "hasTeamNames": false,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 60,
+    "date": "2023-08-12T08:00:00",
+    "name": "Quartas de final",
+    "teamA": "Winner 55",
+    "teamB": "Winner 56",
+    "stadium": "Stadium Austrália, Sydney",
+    "hasTeamNames": false,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 61,
+    "date": "2023-08-15T08:00:00",
+    "name": "Semifinal",
+    "teamA": "Winner 57",
+    "teamB": "Winner 58",
+    "stadium": "Eden Park, Auckland",
+    "hasTeamNames": false,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 62,
+    "date": "2023-08-16T10:00:00",
+    "name": "Semifinal",
+    "teamA": "Winner 59",
+    "teamB": "Winner 60",
+    "stadium": "Stadium Austrália, Sydney",
+    "hasTeamNames": false,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 63,
+    "date": "2023-08-19T10:00:00",
+    "name": "Disputa pelo terceiro lugar",
+    "teamA": "Loser 61",
+    "teamB": "Loser 62",
+    "stadium": "Lang Park, Brisbane",
+    "hasTeamNames": false,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  },
+  {
+    "id": 64,
+    "date": "2023-08-20T10:00:00",
+    "name": "Final",
+    "teamA": "Winner 61",
+    "teamB": "Winner 62",
+    "stadium": "Stadium Austrália, Sydney",
+    "hasTeamNames": false,
+    "finishGame": false,
+    "score": {
+      "teamAScore": null,
+      "teamBScore": null
+    }
+  }
+]
