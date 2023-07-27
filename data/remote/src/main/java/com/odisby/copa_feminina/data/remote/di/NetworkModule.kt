@@ -35,12 +35,13 @@ object NetworkModule {
 
     @Provides
     @Singleton
-    fun provideRetrofitBuilder(gson: Gson, @ApplicationContext context: Context): Retrofit.Builder {
-        val baseUrl = getBaseUrlByLanguage(context)
+    fun provideRetrofitBuilder(gson: Gson): Retrofit.Builder {
+        val baseUrl = getBaseUrlByLanguage()
         return Retrofit.Builder()
             .addConverterFactory(GsonConverterFactory.create(gson))
             .baseUrl(baseUrl)
     }
+
     @Provides
     @Singleton
     fun provideRetrofit(
@@ -55,12 +56,12 @@ object NetworkModule {
     fun providesHttpLoggingInterceptor(): Interceptor = HttpLoggingInterceptor().apply {
         level = HttpLoggingInterceptor.Level.NONE
     }
-    private fun getDeviceLanguage(context: Context): String {
+    private fun getDeviceLanguage(): String {
         return Resources.getSystem().configuration.locales[0].language
     }
 
-    private fun getBaseUrlByLanguage(context: Context): String {
-        return getDeviceLanguage(context).let {
+    private fun getBaseUrlByLanguage(): String {
+        return getDeviceLanguage().let {
             when (it) {
                 "pt" -> BASE_URL_PT
                 else -> BASE_URL_EN

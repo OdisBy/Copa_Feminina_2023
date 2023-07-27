@@ -33,7 +33,7 @@ class NotificationMatcherWorker(
 
     companion object {
         fun start(context: Context, match: MatchDomain) {
-            val (id, matchDate, name, teamA, teamB, _, hasTeamNames, _, _, _) = match
+            val (id, matchDate, name, teamA, teamB, _, _, _, _) = match
 
             val initialDelay = Duration.between(LocalDateTime.now(), matchDate).minusMinutes(5)
             val inputData = workDataOf(

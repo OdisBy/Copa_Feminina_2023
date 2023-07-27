@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -15,6 +16,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Tab
@@ -28,11 +30,14 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.odisby.copa.womens.domain.model.MatchDomain
+import com.odisby.copa.womens.domain.model.TeamDomain
 import com.odisby.copa_feminina.R
 import com.odisby.copa_feminina.data.remote.mapper.getDate
+import com.odisby.copa_feminina.ui.theme.CopaFemininaTheme
 import com.odisby.copa_feminina.ui.theme.Shapes
 
 typealias NotificationOnClick = (match: MatchDomain) -> Unit
@@ -65,8 +70,6 @@ fun MainScreen(matches: List<MatchDomain>) {
         }
 
     }
-
-
 }
 
 @Composable
@@ -91,14 +94,12 @@ fun MatchInfo(match: MatchDomain) {
         modifier = Modifier
             .fillMaxWidth()
     ) {
-        Box {
-            Column(modifier = Modifier
-                .padding(16.dp)
-            ) {
-                Notification(match)
-                Title(match)
-                Teams(match)
-            }
+        Column(modifier = Modifier
+            .padding(16.dp)
+        ) {
+            Notification(match)
+            Title(match)
+            Teams(match)
         }
     }
 }
@@ -162,11 +163,32 @@ fun Teams(match: MatchDomain) {
 }
 
 @Composable
-fun TeamItem(team: String) {
-    Text(
-        text = team,
-        style = MaterialTheme.typography.titleLarge.copy(fontWeight =  FontWeight.Bold)
-    )
+fun TeamItem(team: TeamDomain) {
+    if(team.flag != null) {
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Text(
+                text = team.flag!!,
+                style = MaterialTheme.typography.titleLarge.copy(fontWeight =  FontWeight.Bold)
+            )
+            Spacer(modifier = Modifier.size(16.dp))
+            Text(
+                text = team.displayName!!,
+                style = MaterialTheme.typography.titleLarge.copy(fontWeight =  FontWeight.Bold)
+            )
+        }
+    } else {
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Image(
+                painter = painterResource(id = R.drawable.ic_country_flag_default),
+                contentDescription = null
+            )
+            Spacer(modifier = Modifier.size(16.dp))
+            Text(
+                text = stringResource(id = R.string.country_not_defined),
+                style = MaterialTheme.typography.titleLarge.copy(fontWeight =  FontWeight.Bold)
+            )
+        }
+    }
 }
 
 

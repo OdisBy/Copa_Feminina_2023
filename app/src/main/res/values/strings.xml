@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Copa Feminina</string>
+    <string name="app_name" translatable="false">Copa Feminina</string>
+    <string name="country_not_defined">Not defined</string>
 </resources>
