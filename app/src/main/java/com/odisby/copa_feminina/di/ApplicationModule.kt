@@ -2,6 +2,7 @@ package com.odisby.copa_feminina.di
 
 import android.app.Application
 import android.content.Context
+import com.odisby.copa.womens.domain.usecase.GetMatchesUseCase
 import com.odisby.copa_feminina.data.remote.di.NetworkModule
 import com.odisby.copa_feminina.data.remote.di.RemoteModule
 import com.odisby.copa_feminina.data.remote.di.ServiceModule
@@ -11,6 +12,7 @@ import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
+import javax.inject.Singleton
 
 @Module(
     includes = [
