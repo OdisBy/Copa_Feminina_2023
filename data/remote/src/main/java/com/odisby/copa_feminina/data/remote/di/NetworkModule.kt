@@ -1,10 +1,13 @@
 package com.odisby.copa_feminina.data.remote.di
 
+import android.content.Context
+import android.content.res.Resources
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
+import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
@@ -15,8 +18,9 @@ import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-class NetworkModule {
-    private val url = "https://odisby.github.io/Copa_Feminina_2023/docs/"
+object NetworkModule {
+    private const val BASE_URL_PT = "https://odisby.github.io/Copa_Feminina_2023/docs/pt/"
+    private const val BASE_URL_EN = "https://odisby.github.io/Copa_Feminina_2023/docs/en/"
 
     @Provides
     @Singleton
@@ -31,10 +35,12 @@ class NetworkModule {
 
     @Provides
     @Singleton
-    fun provideRetrofitBuilder(gson: Gson): Retrofit.Builder = Retrofit.Builder()
-        .addConverterFactory(GsonConverterFactory.create(gson))
-        .baseUrl(url)
-
+    fun provideRetrofitBuilder(gson: Gson, @ApplicationContext context: Context): Retrofit.Builder {
+        val baseUrl = getBaseUrlByLanguage(context)
+        return Retrofit.Builder()
+            .addConverterFactory(GsonConverterFactory.create(gson))
+            .baseUrl(baseUrl)
+    }
     @Provides
     @Singleton
     fun provideRetrofit(
@@ -48,5 +54,17 @@ class NetworkModule {
     @Singleton
     fun providesHttpLoggingInterceptor(): Interceptor = HttpLoggingInterceptor().apply {
         level = HttpLoggingInterceptor.Level.NONE
+    }
+    private fun getDeviceLanguage(context: Context): String {
+        return Resources.getSystem().configuration.locales[0].language
+    }
+
+    private fun getBaseUrlByLanguage(context: Context): String {
+        return getDeviceLanguage(context).let {
+            when (it) {
+                "pt" -> BASE_URL_PT
+                else -> BASE_URL_EN
+            }
+        }
     }
 }
