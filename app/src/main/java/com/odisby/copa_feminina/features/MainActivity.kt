@@ -19,7 +19,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             CopaFemininaTheme {
                 val state by viewModel.state.collectAsState()
-                Log.e("MainActivity", "OnCreate: ${state.matches}")
+                MainScreen(matches = state.matches)
             }
         }
     }
