@@ -10,7 +10,6 @@ import javax.inject.Inject
 class MatchDataSourceRemote @Inject constructor(
     private val service: MatchesServices
 ) : MatchesDataSource.Remote {
-
     override suspend fun getMatches(): List<MatchDomain> {
         return runCatching {
             service.getMatches()

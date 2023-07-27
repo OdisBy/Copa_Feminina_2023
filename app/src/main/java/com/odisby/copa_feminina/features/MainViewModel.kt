@@ -17,24 +17,24 @@ import javax.inject.Inject
 class MainViewModel @Inject constructor(
     private val getMatchesUseCase: GetMatchesUseCase
 ) : BaseViewModel<MainUiState, MainUiAction>(MainUiState()) {
-//    init {
-//        fetchMatches()
-//    }
-//    private fun fetchMatches() = viewModelScope.launch {
-//        getMatchesUseCase()
-//            .flowOn(Dispatchers.Main)
-//            .catch {
-//                when(it) {
-//                    is NotFoundException -> sendAction(MainUiAction.MatchesNotFound(it.message ?: "Erro sem mensagem"))
-//                    is UnexpectedException -> sendAction(MainUiAction.Unexpected)
-//                }
-//            }
-//            .collect { matches ->
-//                setState {
-//                    copy(matches = matches)
-//                }
-//            }
-//    }
+    init {
+        fetchMatches()
+    }
+    private fun fetchMatches() = viewModelScope.launch {
+        getMatchesUseCase()
+            .flowOn(Dispatchers.Main)
+            .catch {
+                when(it) {
+                    is NotFoundException -> sendAction(MainUiAction.MatchesNotFound(it.message ?: "Erro sem mensagem"))
+                    is UnexpectedException -> sendAction(MainUiAction.Unexpected)
+                }
+            }
+            .collect { matches ->
+                setState {
+                    copy(matches = matches)
+                }
+            }
+    }
 }
 
 data class MainUiState(

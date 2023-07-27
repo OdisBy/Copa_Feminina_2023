@@ -8,6 +8,9 @@ plugins {
 android {
     namespace = "com.odisby.copa_feminina.data.remote"
     compileSdk = rootProject.extra["compileSdkVersion"] as Int
+    defaultConfig {
+        minSdk = rootProject.extra["minSdkVersion"] as Int
+    }
 }
 
 dependencies {

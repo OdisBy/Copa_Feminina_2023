@@ -47,6 +47,6 @@ class NetworkModule {
     @Provides
     @Singleton
     fun providesHttpLoggingInterceptor(): Interceptor = HttpLoggingInterceptor().apply {
-        level = HttpLoggingInterceptor.Level.BODY
+        level = HttpLoggingInterceptor.Level.NONE
     }
 }
