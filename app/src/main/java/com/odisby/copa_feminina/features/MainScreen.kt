@@ -14,7 +14,6 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
@@ -41,12 +40,12 @@ import androidx.core.content.ContextCompat
 import com.odisby.copa.womens.domain.model.MatchDomain
 import com.odisby.copa.womens.domain.model.TeamDomain
 import com.odisby.copa_feminina.R
-import com.odisby.copa_feminina.data.remote.mapper.getDateToDeviceZone
+import com.odisby.copa_feminina.data.remote.mapper.toDeviceTimeString
 import com.odisby.copa_feminina.ui.theme.Shapes
 
 typealias NotificationOnClick = (match: MatchDomain) -> Unit
 @Composable
-fun MainScreen(matches: List<MatchDomain>, onNotificationClick: NotificationOnClick) {
+fun MainScreen(prevMatches: List<MatchDomain>, nextMatches: List<MatchDomain>, onNotificationClick: NotificationOnClick) {
     val tabs = listOf("Próximos jogos", "Jogos passados")
 
     var tabIndex by remember { mutableStateOf(0) }
@@ -68,8 +67,8 @@ fun MainScreen(matches: List<MatchDomain>, onNotificationClick: NotificationOnCl
                 }
             }
             when (tabIndex) {
-                0 -> NextGames(matches = matches, onNotificationClick)
-                1 -> PrevGames()
+                0 -> NextGames(matches = nextMatches, onNotificationClick)
+                1 -> PrevGames(matches = prevMatches, onNotificationClick)
             }
         }
 
@@ -92,7 +91,22 @@ fun NextGames(matches: List<MatchDomain>, onNotificationClick: NotificationOnCli
 }
 
 @Composable
-fun MatchInfo(match: MatchDomain, onNotificationClick: NotificationOnClick) {
+fun PrevGames(matches: List<MatchDomain>, onNotificationClick: NotificationOnClick) {
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(8.dp)
+    ) {
+        LazyColumn(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+            items(matches) { match ->
+                MatchInfo(match, null, prevGame = true)
+            }
+        }
+    }
+}
+
+@Composable
+fun MatchInfo(match: MatchDomain, onNotificationClick: NotificationOnClick?, prevGame: Boolean = false) {
     Card(
         shape = Shapes.large,
         modifier = Modifier
@@ -101,8 +115,12 @@ fun MatchInfo(match: MatchDomain, onNotificationClick: NotificationOnClick) {
         Column(modifier = Modifier
             .padding(16.dp)
         ) {
-            Notification(match, onNotificationClick)
-            Title(match)
+            Box(modifier = Modifier.fillMaxWidth()) {
+                Title(match)
+                if(!prevGame){
+                    Notification(match, onNotificationClick!!)
+                }
+            }
             Teams(match)
         }
     }
@@ -168,7 +186,7 @@ fun Title(match: MatchDomain) {
             style = MaterialTheme.typography.bodyLarge,
         )
         Text(
-            text = match.date.getDateToDeviceZone(),
+            text = match.date.toDeviceTimeString(),
             style = MaterialTheme.typography.bodyLarge
         )
     }
@@ -178,8 +196,7 @@ fun Title(match: MatchDomain) {
 fun Teams(match: MatchDomain) {
     Row(
         modifier = Modifier
-            .fillMaxWidth()
-            .padding(bottom = 20.dp),
+            .fillMaxWidth(),
         horizontalArrangement = Arrangement.Center,
         verticalAlignment = Alignment.CenterVertically,
     ) {
@@ -243,23 +260,5 @@ fun TeamItem(team: TeamDomain, right: Boolean = false) {
                 )
             }
         }
-    }
-}
-
-
-@Composable
-fun PrevGames() {
-    Column(
-        Modifier
-            .padding(10.dp)
-            .height(50.dp)
-            .fillMaxWidth(),
-        verticalArrangement = Arrangement.SpaceBetween
-    ) {
-        Box(
-            Modifier
-                .size(10.dp)
-                .align(Alignment.CenterHorizontally)
-        )
     }
 }
