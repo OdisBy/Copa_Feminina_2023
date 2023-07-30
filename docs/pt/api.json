@@ -427,10 +427,10 @@
     "teamB": "MA",
     "stadium": "Hindmarsh Stadium, Adelaide",
     "hasTeamNames": true,
-    "finishGame": false,
+    "finishGame": true,
     "score": {
-      "teamAScore": null,
-      "teamBScore": null
+      "teamAScore": 0,
+      "teamBScore": 1
     }
   },
   {
@@ -441,10 +441,10 @@
     "teamB": "PH",
     "stadium": "Eden Park, Auckland",
     "hasTeamNames": true,
-    "finishGame": false,
+    "finishGame": true,
     "score": {
-      "teamAScore": null,
-      "teamBScore": null
+      "teamAScore": 6,
+      "teamBScore": 0
     }
   },
   {
@@ -455,10 +455,10 @@
     "teamB": "NZ",
     "stadium": "Forsyth Barr Stadium, Dunedin",
     "hasTeamNames": true,
-    "finishGame": false,
+    "finishGame": true,
     "score": {
-      "teamAScore": null,
-      "teamBScore": null
+      "teamAScore": 0,
+      "teamBScore": 0
     }
   },
   {
