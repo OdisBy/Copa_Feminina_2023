@@ -46,7 +46,7 @@ import com.odisby.copa_feminina.ui.theme.Shapes
 typealias NotificationOnClick = (match: MatchDomain) -> Unit
 @Composable
 fun MainScreen(prevMatches: List<MatchDomain>, nextMatches: List<MatchDomain>, onNotificationClick: NotificationOnClick) {
-    val tabs = listOf("Próximos jogos", "Jogos passados")
+    val tabs = listOf(stringResource(id = R.string.next_games_tab), stringResource(id = R.string.prev_games_tab))
 
     var tabIndex by remember { mutableStateOf(0) }
 

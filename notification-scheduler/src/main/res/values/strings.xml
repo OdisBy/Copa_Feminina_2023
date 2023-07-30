@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notification_title" formatted="true">Get ready! The match will start in 20 minutes</string>
+    <string name="notification_content" formatted="true">Today has %1$s X %2$s</string>
+    <string name="ontime_notification_title">The match will start now!</string>
+    <string name="ontime_notification_content" formatted="true">The match %1$s X %2$s is starting</string>
+</resources>

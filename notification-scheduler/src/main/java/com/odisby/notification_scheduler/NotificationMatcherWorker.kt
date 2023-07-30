@@ -10,6 +10,7 @@ import androidx.work.Worker
 import androidx.work.WorkerParameters
 import androidx.work.workDataOf
 import com.odisby.copa.womens.domain.model.MatchDomain
+import com.odisby.copa_feminina.notification_scheduler.R
 import java.time.Duration
 import java.time.LocalDateTime
 
@@ -45,15 +46,15 @@ class NotificationMatcherWorker(
 
             val initialDelayEarly = Duration.between(LocalDateTime.now(), matchDate).minusMinutes(20)
             val inputDataEarly = workDataOf(
-                NOTIFICATION_TITLE_KEY to "Se prepare que o jogo vai começar em 20 minutos",
-                NOTIFICATION_CONTENT_KEY to "Hoje tem ${teamA.flag} X ${teamB.flag}",
+                NOTIFICATION_TITLE_KEY to context.resources.getString(R.string.notification_title),
+                NOTIFICATION_CONTENT_KEY to context.resources.getString(R.string.notification_content, teamA.flag, teamB.flag),
                 NOTIFICATION_TIMEOUT to 20L
             )
 
             val initialDelay = Duration.between(LocalDateTime.now(), matchDate)
             val inputData = workDataOf(
-                NOTIFICATION_TITLE_KEY to "O jogo vai começar agora",
-                NOTIFICATION_CONTENT_KEY to "O jogo ${teamA.flag} X ${teamB.flag} está começando",
+                NOTIFICATION_TITLE_KEY to context.resources.getString(R.string.ontime_notification_title),
+                NOTIFICATION_CONTENT_KEY to context.resources.getString(R.string.ontime_notification_content, teamA.flag, teamB.flag),
             )
             val uniqueIdEarly = "early_$id"
             val uniqueIdOnTime = "ontime_$id"

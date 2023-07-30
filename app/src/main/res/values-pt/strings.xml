@@ -2,4 +2,6 @@
 <resources>
     <string name="app_name">Copa do Mundo Feminina</string>
     <string name="country_not_defined">TBD</string>
+    <string name="next_games_tab">Próximos jogos</string>
+    <string name="prev_games_tab">Jogos passados</string>
 </resources>

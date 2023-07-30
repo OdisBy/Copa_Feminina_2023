@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notification_title">Se prepare! A partida começará em 20 minutos</string>
+    <string name="notification_content">Hoje temos %1$s X %2$s</string>
+    <string name="ontime_notification_title">O jogo vai começar agora!</string>
+    <string name="ontime_notification_content">A partida %1$s x %2$s está começando</string>
+</resources>
