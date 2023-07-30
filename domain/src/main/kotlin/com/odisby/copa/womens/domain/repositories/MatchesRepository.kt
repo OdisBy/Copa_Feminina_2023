@@ -1,10 +1,10 @@
 package com.odisby.copa.womens.domain.repositories
 
+import com.odisby.copa.womens.domain.model.MatchDomain
 import kotlinx.coroutines.flow.Flow
-import com.odisby.copa.womens.domain.model.Match
 
 interface MatchesRepository {
-    suspend fun getMatches(): Flow<List<Match>>
+    suspend fun getMatches(): Flow<Pair<List<MatchDomain>, List<MatchDomain>>>
     suspend fun enableNotificationFor(id: String)
     suspend fun disableNotificationFor(id: String)
 }

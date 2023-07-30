@@ -34,9 +34,9 @@ class MainViewModel @Inject constructor(
                     is UnexpectedException -> sendAction(MainUiAction.Unexpected)
                 }
             }
-            .collect { matches ->
+            .collect { (prevMatches, nextMatches) ->
                 setState {
-                    copy(matches = matches)
+                    copy(prevMatches = prevMatches, nextMatches = nextMatches)
                 }
             }
     }
@@ -58,7 +58,8 @@ class MainViewModel @Inject constructor(
 }
 
 data class MainUiState(
-    val matches: List<MatchDomain> = emptyList()
+    val prevMatches: List<MatchDomain> = emptyList(),
+    val nextMatches: List<MatchDomain> = emptyList(),
 )
 
 sealed interface MainUiAction {

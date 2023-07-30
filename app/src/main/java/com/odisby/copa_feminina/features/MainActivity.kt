@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             CopaFemininaTheme {
                 val state by viewModel.state.collectAsState()
-                MainScreen(matches = state.matches, viewModel::toggleNotification)
+                MainScreen(prevMatches = state.prevMatches, nextMatches = state.nextMatches, viewModel::toggleNotification)
             }
         }
     }
