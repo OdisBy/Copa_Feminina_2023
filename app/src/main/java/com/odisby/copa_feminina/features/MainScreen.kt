@@ -68,7 +68,7 @@ fun MainScreen(prevMatches: List<MatchDomain>, nextMatches: List<MatchDomain>, o
             }
             when (tabIndex) {
                 0 -> NextGames(matches = nextMatches, onNotificationClick)
-                1 -> PrevGames(matches = prevMatches, onNotificationClick)
+                1 -> PrevGames(matches = prevMatches)
             }
         }
 
@@ -91,7 +91,7 @@ fun NextGames(matches: List<MatchDomain>, onNotificationClick: NotificationOnCli
 }
 
 @Composable
-fun PrevGames(matches: List<MatchDomain>, onNotificationClick: NotificationOnClick) {
+fun PrevGames(matches: List<MatchDomain>) {
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -116,13 +116,16 @@ fun MatchInfo(match: MatchDomain, onNotificationClick: NotificationOnClick?, pre
         Column(modifier = Modifier
             .padding(16.dp)
         ) {
-            Box(modifier = Modifier.fillMaxWidth()) {
+            if(prevGame) {
                 Title(match)
-                if(!prevGame){
+                TeamsPrevGame(match)
+            } else {
+                Box(modifier = Modifier.fillMaxWidth()) {
+                    Title(match)
                     Notification(match, onNotificationClick!!)
                 }
+                Teams(match)
             }
-            Teams(match)
         }
     }
 }
@@ -202,14 +205,30 @@ fun Teams(match: MatchDomain) {
         verticalAlignment = Alignment.CenterVertically,
     ) {
         TeamItem(team = match.teamA)
-
         Text(
             text = "x",
             modifier = Modifier.padding(end = 16.dp, start = 16.dp),
             style = MaterialTheme.typography.headlineMedium
         )
-
         TeamItem(team = match.teamB, right = true)
+    }
+}
+
+@Composable
+fun TeamsPrevGame(match: MatchDomain) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth(),
+        horizontalArrangement = Arrangement.Center,
+        verticalAlignment = Alignment.CenterVertically,
+    ) {
+        PrevTeamItem(match)
+        Text(
+            text = "x",
+            modifier = Modifier.padding(end = 16.dp, start = 16.dp),
+            style = MaterialTheme.typography.headlineMedium
+        )
+        PrevTeamItem(match, right = true)
     }
 }
 
@@ -262,4 +281,32 @@ fun TeamItem(team: TeamDomain, right: Boolean = false) {
             }
         }
     }
+}
+
+@Composable
+fun PrevTeamItem(match: MatchDomain, right: Boolean = false) {
+    Row(verticalAlignment = Alignment.CenterVertically) {
+        if(right) {
+            Text(
+                text = match.score.teamAScore.toString(),
+                style = MaterialTheme.typography.titleLarge.copy(fontWeight =  FontWeight.Bold)
+            )
+            Spacer(modifier = Modifier.size(16.dp))
+            Text(
+                text = match.teamA.flag!!,
+                style = MaterialTheme.typography.titleLarge.copy(fontWeight =  FontWeight.Bold)
+            )
+        } else {
+            Text(
+                text = match.teamB.flag!!,
+                style = MaterialTheme.typography.titleLarge.copy(fontWeight =  FontWeight.Bold)
+            )
+            Spacer(modifier = Modifier.size(16.dp))
+            Text(
+                text = match.score.teamBScore.toString(),
+                style = MaterialTheme.typography.titleLarge.copy(fontWeight =  FontWeight.Bold)
+            )
+        }
+    }
+
 }
