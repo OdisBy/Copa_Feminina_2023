@@ -111,6 +111,7 @@ fun MatchInfo(match: MatchDomain, onNotificationClick: NotificationOnClick?, pre
         shape = Shapes.large,
         modifier = Modifier
             .fillMaxWidth()
+            .padding(start = 10.dp, end = 10.dp, top = 10.dp),
     ) {
         Column(modifier = Modifier
             .padding(16.dp)
