@@ -4,6 +4,7 @@ import com.odisby.copa.womens.domain.model.MatchDomain
 import com.odisby.copa.womens.domain.model.Team
 import com.odisby.copa_feminina.data.remote.model.MatchRemote
 import java.time.LocalDateTime
+import java.time.ZoneId
 import java.time.format.DateTimeFormatter
 import java.util.Locale
 
@@ -20,11 +21,11 @@ fun MatchRemote.toDomain(): MatchDomain {
         score = score,
     )
 }
-
-fun LocalDateTime.getDateToDeviceZone(): String {
-    return DateTimeFormatter.ofPattern("dd/MM HH:mm").format(this)
+fun LocalDateTime.toDeviceTimeString(): String {
+    val deviceZoneId = ZoneId.systemDefault()
+    val deviceDateTime = this.atZone(ZoneId.of("GMT")).withZoneSameInstant(deviceZoneId).toLocalDateTime()
+    return DateTimeFormatter.ofPattern("dd/MM HH:mm").format(deviceDateTime)
 }
-
 private fun String.toLocalDateTime(): LocalDateTime {
     val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss")
     return LocalDateTime.parse(this, formatter)
