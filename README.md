@@ -1,4 +1,4 @@
-# App Copa Feminina 2023
+# Copa do Mundo Feminina 2023
 
 ## API
 
@@ -14,14 +14,12 @@ Para facilitar a dinâmica de integração do nosso App, criamos uma Pseudo-API 
         * ***remote***: Implementação de uma fonte de dados remota usando o [Retrofit](https://square.github.io/retrofit/) como client HTTP.
     * **domain**: Neste módulo são declarados os use cases da aplicação;
     * **notification-scheduler**: Módulo específico para a criação das Notificações via Work Manager.
-2. :white_large_square: Criar os casos de uso para as seguintes funcionalidades:
+2. :white_large_square: Usecases:
     * Buscar Partidas: `GetMatchesUseCase.kt`;
     * Habilitar Notificação: `EnableNotificationUseCase.kt`;
     * Desabilitar Notificação: `DisableNotificationUseCase.kt`.
-3. :white_large_square: Criar o `MainViewModel.kt` para orquestrar as interações com a `MainActivity.kt`;
-4. :white_large_square: Criar a `MainScreen.kt` para criar a UI por meio do Jetpack Compose;
-5. :white_large_square: Integrar o ViewModel e Activity, através da observação de estados;
-6. :white_large_square: Por fim, criar o Work Manager para orquestrar as Notificações Push localmente.
+3. :white_large_square: UI em `MainScreen.kt` feita por meio do Jetpack Compose;
+4. :white_large_square: Notificações com o Work Manager.
 
 ## Inspiração
 
