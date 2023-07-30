@@ -11,21 +11,21 @@ import androidx.core.app.ActivityCompat
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import com.odisby.copa_feminina.notification_scheduler.R
+import java.util.concurrent.TimeUnit
 
 private const val CHANNEL_ID = "new_channel_video"
 private const val NOTIFICATION_NAME = "Notificações"
 private const val NOTIFICATION_INTENT_REQUEST_CODE = 0
 
-fun Context.showNotification(title: String, content: String) {
+fun Context.showNotification(title: String, content: String, timeOut: Long?) {
     createNotificationChannel()
-    val notification = getNotification(title, content)
+    val notification = getNotification(title, content, timeOut)
 
     if (ActivityCompat.checkSelfPermission(
             this,
             Manifest.permission.POST_NOTIFICATIONS
         ) != PackageManager.PERMISSION_GRANTED
     ) {
-        // Need to add logic to ActivityCompat#requestPermissions
         return
     }
     NotificationManagerCompat
@@ -41,8 +41,8 @@ private fun Context.createNotificationChannel() {
         .createNotificationChannel(channel)
 }
 
-private fun Context.getNotification(title: String, content: String): Notification =
-    NotificationCompat
+private fun Context.getNotification(title: String, content: String, timeOut: Long?): Notification {
+    val notification = NotificationCompat
         .Builder(this, CHANNEL_ID)
         .setSmallIcon(R.drawable.ic_soccer)
         .setContentTitle(title)
@@ -52,7 +52,13 @@ private fun Context.getNotification(title: String, content: String): Notificatio
         .setVisibility(NotificationCompat.VISIBILITY_PUBLIC)
         .setContentIntent(getOpenAppPendingIntent())
         .setAutoCancel(true)
-        .build()
+    timeOut?.let {
+        val minutesToMilliseconds = TimeUnit.MINUTES.toMillis(it)
+        notification.setTimeoutAfter(minutesToMilliseconds)
+    }
+    return notification.build()
+}
+
 
 private fun Context.getOpenAppPendingIntent() = PendingIntent.getActivity(
     this,
