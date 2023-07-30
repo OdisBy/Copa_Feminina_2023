@@ -1,5 +1,12 @@
 # Copa do Mundo Feminina 2023
 
+<div style="display: flex;">
+  <img src="https://github.com/OdisBy/Copa_Feminina_2023/assets/69876102/87abbe39-7a81-4239-97ec-346f73da9532" alt="Screenshot_20230724_014440" style="width: 24%;">
+  <img src="https://github.com/OdisBy/Copa_Feminina_2023/assets/69876102/8d62c15b-1f1a-447c-b93e-1468e792fd52" alt="Screenshot_20230724_015337" style="width: 24%;">
+  <img src="https://github.com/OdisBy/Copa_Feminina_2023/assets/69876102/b5575fb0-c7ca-4269-8fd0-5d49e3664308" alt="Screenshot_20230724_015313" style="width: 24%;">
+  <img src="https://github.com/OdisBy/Copa_Feminina_2023/assets/69876102/55f1df66-8f1b-467a-ad47-aad664101445" alt="Screenshot_20230724_015313" style="width: 24%;">
+</div>
+
 ## API
 
 Para facilitar a dinâmica de integração do nosso App, criamos uma Pseudo-API usando o GitHub Pages, a qual está disponível na seguinte URL: https://odisby.github.io/Copa_Feminina_2023/docs/en/api.json ou https://odisby.github.io/Copa_Feminina_2023/docs/pt/api.json
