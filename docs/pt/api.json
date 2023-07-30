@@ -259,10 +259,10 @@
     "teamB": "CR",
     "stadium": "Forsyth Barr Stadium, Dunedin",
     "hasTeamNames": true,
-    "finishGame": false,
+    "finishGame": true,
     "score": {
-      "teamAScore": null,
-      "teamBScore": null
+      "teamAScore": 2,
+      "teamBScore": 0
     }
   },
   {
@@ -273,10 +273,10 @@
     "teamB": "ZM",
     "stadium": "Eden Park, Auckland",
     "hasTeamNames": true,
-    "finishGame": false,
+    "finishGame": true,
     "score": {
-      "teamAScore": null,
-      "teamBScore": null
+      "teamAScore": 5,
+      "teamBScore": 0
     }
   },
   {
@@ -284,13 +284,13 @@
     "date": "2023-07-26T12:00:00",
     "name": "Fase de grupos",
     "teamA": "CA",
-    "teamB": "AU",
+    "teamB": "IE",
     "stadium": "Melbourne Rectangular Stadium, Melbourne",
     "hasTeamNames": true,
-    "finishGame": false,
+    "finishGame": true,
     "score": {
-      "teamAScore": null,
-      "teamBScore": null
+      "teamAScore": 2,
+      "teamBScore": 1
     }
   },
   {
@@ -301,10 +301,10 @@
     "teamB": "NL",
     "stadium": "Wellington Regional Stadium, Wellington",
     "hasTeamNames": true,
-    "finishGame": false,
+    "finishGame": true,
     "score": {
-      "teamAScore": null,
-      "teamBScore": null
+      "teamAScore": 1,
+      "teamBScore": 1
     }
   },
   {
@@ -315,10 +315,10 @@
     "teamB": "VN",
     "stadium": "Waikato Stadium, Hamilton",
     "hasTeamNames": true,
-    "finishGame": false,
+    "finishGame": true,
     "score": {
-      "teamAScore": null,
-      "teamBScore": null
+      "teamAScore": 2,
+      "teamBScore": 0
     }
   },
   {
@@ -329,10 +329,10 @@
     "teamB": "NG",
     "stadium": "Lang Park, Brisbane",
     "hasTeamNames": true,
-    "finishGame": false,
+    "finishGame": true,
     "score": {
-      "teamAScore": null,
-      "teamBScore": null
+      "teamAScore": 2,
+      "teamBScore": 3
     }
   },
   {
@@ -343,10 +343,10 @@
     "teamB": "ZA",
     "stadium": "Forsyth Barr Stadium, Dunedin",
     "hasTeamNames": true,
-    "finishGame": false,
+    "finishGame": true,
     "score": {
-      "teamAScore": null,
-      "teamBScore": null
+      "teamAScore": 2,
+      "teamBScore": 2
     }
   },
   {
@@ -357,10 +357,10 @@
     "teamB": "DK",
     "stadium": "Sydney Football Stadium, Sydney",
     "hasTeamNames": true,
-    "finishGame": false,
+    "finishGame": true,
     "score": {
-      "teamAScore": null,
-      "teamBScore": null
+      "teamAScore": 1,
+      "teamBScore": 0
     }
   },
   {
@@ -371,10 +371,10 @@
     "teamB": "HT",
     "stadium": "Hindmarsh Stadium, Adelaide",
     "hasTeamNames": true,
-    "finishGame": false,
+    "finishGame": true,
     "score": {
-      "teamAScore": null,
-      "teamBScore": null
+      "teamAScore": 1,
+      "teamBScore": 0
     }
   },
   {
@@ -385,10 +385,10 @@
     "teamB": "IT",
     "stadium": "Wellington Regional Stadium, Wellington",
     "hasTeamNames": true,
-    "finishGame": false,
+    "finishGame": true,
     "score": {
-      "teamAScore": null,
-      "teamBScore": null
+      "teamAScore": 5,
+      "teamBScore": 0
     }
   },
   {
@@ -399,10 +399,10 @@
     "teamB": "BR",
     "stadium": "Lang Park, Brisbane",
     "hasTeamNames": true,
-    "finishGame": false,
+    "finishGame": true,
     "score": {
-      "teamAScore": null,
-      "teamBScore": null
+      "teamAScore": 2,
+      "teamBScore": 1
     }
   },
   {
@@ -413,10 +413,10 @@
     "teamB": "JM",
     "stadium": "Perth Rectangular Stadium, Perth",
     "hasTeamNames": true,
-    "finishGame": false,
+    "finishGame": true,
     "score": {
-      "teamAScore": null,
-      "teamBScore": null
+      "teamAScore": 0,
+      "teamBScore": 1
     }
   },
   {
@@ -521,7 +521,7 @@
     "id": 38,
     "date": "2023-07-31T10:00:00",
     "name": "Fase de grupos",
-    "teamA": "IRL",
+    "teamA": "IE",
     "teamB": "NG",
     "stadium": "Lang Park, Brisbane",
     "hasTeamNames": true,
