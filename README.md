@@ -14,12 +14,12 @@ Para facilitar a dinâmica de integração do nosso App, criamos uma Pseudo-API 
         * ***remote***: Implementação de uma fonte de dados remota usando o [Retrofit](https://square.github.io/retrofit/) como client HTTP.
     * **domain**: Neste módulo são declarados os use cases da aplicação;
     * **notification-scheduler**: Módulo específico para a criação das Notificações via Work Manager.
-2. :white_large_square: Usecases:
+2. :white_check_mark: Usecases:
     * Buscar Partidas: `GetMatchesUseCase.kt`;
     * Habilitar Notificação: `EnableNotificationUseCase.kt`;
     * Desabilitar Notificação: `DisableNotificationUseCase.kt`.
-3. :white_large_square: UI em `MainScreen.kt` feita por meio do Jetpack Compose;
-4. :white_large_square: Notificações com o Work Manager.
+3. :white_check_mark: UI em `MainScreen.kt` feita por meio do Jetpack Compose;
+4. :white_check_mark: Notificações com o Work Manager.
 
 ## Inspiração
 
