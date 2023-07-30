@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="country_not_defined">Não definido</string>
+    <string name="app_name">Copa do Mundo Feminina</string>
+    <string name="country_not_defined">TBD</string>
 </resources>

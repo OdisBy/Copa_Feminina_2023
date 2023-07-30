@@ -186,40 +186,62 @@ fun Teams(match: MatchDomain) {
         TeamItem(team = match.teamA)
 
         Text(
-            text = "X",
+            text = "x",
             modifier = Modifier.padding(end = 16.dp, start = 16.dp),
             style = MaterialTheme.typography.headlineMedium
         )
 
-        TeamItem(team = match.teamB)
+        TeamItem(team = match.teamB, right = true)
     }
 }
 
 @Composable
-fun TeamItem(team: TeamDomain) {
-    if(team.flag != null) {
-        Row(verticalAlignment = Alignment.CenterVertically) {
-            Text(
-                text = team.flag!!,
-                style = MaterialTheme.typography.titleLarge.copy(fontWeight =  FontWeight.Bold)
-            )
-            Spacer(modifier = Modifier.size(16.dp))
-            Text(
-                text = team.displayName!!,
-                style = MaterialTheme.typography.titleLarge.copy(fontWeight =  FontWeight.Bold)
-            )
-        }
-    } else {
-        Row(verticalAlignment = Alignment.CenterVertically) {
-            Image(
-                painter = painterResource(id = R.drawable.ic_country_flag_default),
-                contentDescription = null
-            )
-            Spacer(modifier = Modifier.size(16.dp))
-            Text(
-                text = stringResource(id = R.string.country_not_defined),
-                style = MaterialTheme.typography.titleLarge.copy(fontWeight =  FontWeight.Bold)
-            )
+fun TeamItem(team: TeamDomain, right: Boolean = false) {
+    Row(verticalAlignment = Alignment.CenterVertically) {
+        if(team.displayName != null) {
+            if(right) {
+                Text(
+                    text = team.flag!!,
+                    style = MaterialTheme.typography.titleLarge.copy(fontWeight =  FontWeight.Bold)
+                )
+                Spacer(modifier = Modifier.size(16.dp))
+                Text(
+                    text = team.displayName!!,
+                    style = MaterialTheme.typography.titleLarge.copy(fontWeight =  FontWeight.Bold)
+                )
+            } else {
+                Text(
+                    text = team.displayName!!,
+                    style = MaterialTheme.typography.titleLarge.copy(fontWeight =  FontWeight.Bold)
+                )
+                Spacer(modifier = Modifier.size(16.dp))
+                Text(
+                    text = team.flag!!,
+                    style = MaterialTheme.typography.titleLarge.copy(fontWeight =  FontWeight.Bold)
+                )
+            }
+        } else {
+            if(right) {
+                Image(
+                    painter = painterResource(id = R.drawable.ic_country_flag_default),
+                    contentDescription = null
+                )
+                Spacer(modifier = Modifier.size(16.dp))
+                Text(
+                    text = stringResource(id = R.string.country_not_defined),
+                    style = MaterialTheme.typography.titleLarge.copy(fontWeight =  FontWeight.Bold)
+                )
+            } else {
+                Text(
+                    text = stringResource(id = R.string.country_not_defined),
+                    style = MaterialTheme.typography.titleLarge.copy(fontWeight =  FontWeight.Bold)
+                )
+                Spacer(modifier = Modifier.size(16.dp))
+                Image(
+                    painter = painterResource(id = R.drawable.ic_country_flag_default),
+                    contentDescription = null
+                )
+            }
         }
     }
 }

@@ -11,8 +11,7 @@ internal fun List<MatchRemote>.toDomain() = map { it.toDomain() }
 fun MatchRemote.toDomain(): MatchDomain {
     return MatchDomain(
         id = id,
-        date = fakeDateForDebug(),
-//        date = date.toLocalDateTime(),
+        date = date.toLocalDateTime(),
         name = name,
         teamA = teamA.toTeam(hasTeamNames),
         teamB = teamB.toTeam(hasTeamNames),
@@ -22,21 +21,9 @@ fun MatchRemote.toDomain(): MatchDomain {
     )
 }
 
-//private fun LocalDateTime.toPhoneTimeZone(): LocalDateTime {
-//    val gmtDateTime = atZone(ZoneId.of("GMT"))
-//    val phoneTimeZoneDateTime = gmtDateTime.withZoneSameInstant(ZoneId.systemDefault())
-//    return phoneTimeZoneDateTime.toLocalDateTime()
-//}
-
 fun LocalDateTime.getDateToDeviceZone(): String {
-//    val timezone = this.toPhoneTimeZone()
     return DateTimeFormatter.ofPattern("dd/MM HH:mm").format(this)
 }
-
-//fun String.toDeviceTimeZoneString(): LocalDateTime {
-//    val parsedDateTime = LocalDateTime.parse(this)
-//    return parsedDateTime.toPhoneTimeZone()
-//}
 
 private fun String.toLocalDateTime(): LocalDateTime {
     val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss")
@@ -47,13 +34,12 @@ private fun String.toTeam(hasTeamNames: Boolean): Team {
     if(hasTeamNames) {
         return Team(
             flag = getTeamFlag(this),
-            displayName = Locale("", this).isO3Country
+            displayName = Locale("", this).isO3Country,
         )
     }
-
     return Team(
         flag = null,
-        displayName = null
+        displayName = null,
     )
 }
 

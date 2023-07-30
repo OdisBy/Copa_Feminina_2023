@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name" translatable="false">Copa Feminina</string>
-    <string name="country_not_defined">Not defined</string>
+    <string name="app_name">Women\'s World Cup</string>
+    <string name="country_not_defined">TBD</string>
 </resources>
