@@ -21,7 +21,7 @@ class MatchesRepositoryImpl @Inject constructor(
                 val futureMatches = mutableListOf<MatchDomain>()
 
                 matches.forEach { match ->
-                    if (match.date.isBefore(now)) {
+                    if (match.finishGame) {
                         pastMatches.add(match)
                     } else {
                         val updatedMatch = match.copy(notificationEnabled = ids.contains(match.id.toString()))
