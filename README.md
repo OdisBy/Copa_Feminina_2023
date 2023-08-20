@@ -9,9 +9,9 @@
 
 ## API
 
-Para facilitar a dinâmica de integração do nosso App, criamos uma Pseudo-API usando o GitHub Pages, a qual está disponível na seguinte URL: https://odisby.github.io/Copa_Feminina_2023/docs/en/api.json ou https://odisby.github.io/Copa_Feminina_2023/docs/pt/api.json
+Para facilitar a dinâmica de integração do nosso App, tenho uma Pseudo-API usando o GitHub Pages, a qual está disponível na seguinte URL: https://odisby.github.io/Copa_Feminina_2023/docs/en/api.json ou https://odisby.github.io/Copa_Feminina_2023/docs/pt/api.json
 
-## Desafio de Projeto (Lab) 😎
+## Copa do Mundo Feminina 2023 ⚽
 
 1. :white_check_mark: Responsabilidades dos módulos:
     * **app**: Contém as classes de nível de aplicativo e scaffolding que vinculam o restante da base de código.
